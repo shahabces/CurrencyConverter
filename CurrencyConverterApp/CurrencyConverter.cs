@@ -71,6 +71,7 @@ namespace CurrencyConverterApp
                     throw new Exception("Currency not found.");
                 }
 
+                // I used BFS to find shortest path in graph
                 Queue<string> queue = new();
                 Dictionary<string, double> visited = new();
                 queue.Enqueue(fromCurrency);
